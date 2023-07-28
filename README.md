@@ -1,6 +1,6 @@
 # comp2521-revision-session-questions
 
-Practice problems for the 22T2 CSESoc COMP2521 revision session. Includes a mix of theory-based multiple choice questions and practical programming problems.
+Practice problems for the 23T2 CSESoc COMP2521 revision session. Includes a mix of theory-based multiple choice questions and practical programming problems.
 
 ## Setup
 
@@ -11,7 +11,7 @@ To set up this repository locally for writing Autotest-compatible tests:
 First clone the repository:
 
 ```bash
-$ git clone https://github.com/dqna64/comp2521-revision-session.git
+$ git clone https://github.com/Allynixtor/comp2521-revision-session.git
 $ cd comp2521-revision-session
 ```
 
