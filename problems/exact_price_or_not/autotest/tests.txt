@@ -2,9 +2,9 @@ max_cpu_seconds=3
 
 files=exact_price_or_not.c
 
-compilers=[['gcc']]
+compilers=[['clang']]
 
-compiler_args=-Wall -Werror -g test_exact_price_or_not.c exact_price_or_not.c -o test_exact_price_or_not
+compiler_args=-Wall -Werror -g -fsanitize=address,leak,undefined -o test_exact_price_or_not.c exact_price_or_not.c -o test_exact_price_or_not
 
 command=./test_exact_price_or_not
 

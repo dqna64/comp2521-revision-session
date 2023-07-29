@@ -2,9 +2,9 @@ max_cpu_seconds=3
 
 files=graph_detect_cycle.c
 
-compilers=[['gcc']]
+compilers=[['clang']]
 
-compiler_args=-Wall -Werror -g test_graph_detect_cycle.c graph_detect_cycle.c Graph.c -o test_graph_detect_cycle
+compiler_args=-Wall -Werror -g -fsanitize=address,leak,undefined -o test_graph_detect_cycle.c graph_detect_cycle.c Graph.c -o test_graph_detect_cycle
 
 command=./test_graph_detect_cycle
 

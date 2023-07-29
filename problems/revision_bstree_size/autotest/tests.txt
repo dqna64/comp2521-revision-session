@@ -2,9 +2,9 @@ max_cpu_seconds=3
 
 files=bstree_size.c
 
-compilers=[['gcc']]
+compilers=[['clang']]
 
-compiler_args=-Wall -Werror -g test_bstree_size.c bstree_size.c bstree.c -o test_bstree_size
+compiler_args=-Wall -Werror -g -fsanitize=address,leak,undefined -o test_bstree_size.c bstree_size.c bstree.c -o test_bstree_size
 
 command=./test_bstree_size
 
