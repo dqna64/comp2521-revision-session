@@ -125,6 +125,9 @@ bool adjacent(Graph g, Vertex u, Vertex v) {
 }
 
 void freeGraph(Graph g) {
+    for (Vertex v = 0; v < g->_nV; v++) {
+        free(g->_adjMatrix[v]);
+    }
     free(g->_adjMatrix);
     free(g);
 }
